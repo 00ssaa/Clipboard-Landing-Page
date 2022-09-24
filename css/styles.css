@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    position: relative;
+    font-size: 13px;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: hsl(210, 10%, 33%);
+}
+h1, h2, h3{
+    color: hsl(210, 10%, 33%);
+    padding-top: 2.5rem;
+    padding-bottom: 1rem;
+}
+p{
+    color: hsl(201, 11%, 66%);
+    padding-bottom: 2rem;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 5.5rem;
+}
+
+/* hero */
+.hero-container{
+    width: 100%;
+    background-image: url(../images/bg-header-mobile.png);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.hero{
+    padding-top: 8rem;
+    margin-inline: 2rem;
+}
+.hero img{
+    width: 40%;
+}
+.button{
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+.btn{
+    padding: 1rem;
+    border-radius: 2.5rem;
+    color: hsl(250,100%,100%);
+    border: none;
+}
+.btn1{
+    background-color: hsl(171, 66%, 44%);  
+    box-shadow:1px 2.5px 10px 2px hsl(171, 86%, 25%);
+}
+.btn2{
+    background-color: hsl(233, 100%, 69%);
+    box-shadow:1px 2.3px 10px 2px hsl(233, 100%, 69%)
+}
+@media screen and (min-width: 50rem) {
+    .hero-container{
+        background-image: url(../images/bg-header-desktop.png);
+    }
+    .hero{
+        margin-inline: 10rem;
+    }
+    .hero img{
+        width: 8%;
+        height: 8%;
+    }
+    .button{
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+/* snippets */
+.snippets{
+    margin-inline: 2rem;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+.left img{
+    width: 90%;
+}
+@media screen and (min-width: 50rem) {
+    .snippets{
+        margin-inline: 10rem;
+    }
+    .flex{
+        flex-direction: row;
+        gap: 2rem;
+    }
+    .left img{
+        position: absolute;
+        width: 40%;
+        height: 15%;
+        left: 0;
+    }
+    .right{
+        margin-left: 30rem;
+    }
+}
+
+/* access */
+.access{
+    margin-inline: 2rem;
+}
+.access img{
+    width: 100%;
+}
+@media screen and (min-width: 50rem) {
+    .access{
+        padding-top: 5rem;
+        margin-inline: 10rem;
+    }
+}
+
+/* booster */
+.booster{
+    margin-inline: 2rem;
+}
+@media screen and (min-width: 50rem) {
+    .booster{
+        margin-inline: 10rem;
+    }
+    .flex2{
+        display: flex;
+        gap: 3rem;
+    }
+}
+
+/* icons */
+.icons{
+    margin-inline: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+.icons img{
+    width: 35%;
+}
+@media screen and (min-width: 50rem) {
+    .icons{
+        margin-inline: 10rem;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .icons img{
+        width: 12%;
+    }
+}
+
+/* footer */
+.footer-top{
+    margin-inline: 2rem;
+    padding-bottom: 9rem;
+}
+.footer-bottom{
+    padding-top: 4rem;
+    padding-bottom:2rem;
+}
+.footer-bottom img{
+    width: 15%;
+}
+.links{
+    padding-top: 4rem;
+}
+.links p{
+    color: hsl(210, 10%, 33%);
+}
+.footer-icons{
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+}
+.footer-icons img{
+    width: 80%;
+}
+@media screen and (min-width: 50rem) {
+    .footer-bottom{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-inline: 3rem;
+    }
+    .links{
+        margin-inline: 10rem;
+        display: flex;
+        column-gap: 3rem;
+        flex-wrap: wrap;
+    }
+    .footer-bottom > img{
+        width: 5%;
+    }
+}
